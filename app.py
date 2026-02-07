@@ -48,7 +48,7 @@ model = joblib.load(MODEL_PATHS[model_name])
 
 st.subheader("⬇️ Download Sample Test Dataset")
 
-with open("D:/BITS Pilani/Semester 2/ML/Assignment II/data/test.csv", "rb") as file:
+with open("data/test.csv", "rb") as file:
     st.download_button(
         label="Download test_data.csv",
         data=file,
