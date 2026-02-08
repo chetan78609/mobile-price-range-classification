@@ -124,7 +124,7 @@ A **Streamlit web application** was developed to demonstrate the trained models 
 ```bash
 git clone <repository-url>
 cd <repository-folder>
-
+```
 
 ## 11. Deployment
 
