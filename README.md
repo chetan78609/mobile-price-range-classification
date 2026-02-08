@@ -128,12 +128,46 @@ cd <repository-folder>
 
 ## 11. Deployment
 
-The application is deployed using Streamlit Community Cloud.
-A sample test dataset is provided in the repository and can also be downloaded directly from the Streamlit interface for evaluation.
+The application is deployed on **Streamlit Community Cloud**, allowing users to access the trained models directly from the browser without any local setup.
+
+🔗 **Live App:**  
+https://mobile-price-range-classification-fbek4rgepyckgz3ysmt8vb.streamlit.app/
+
+### Deployment Highlights
+- Interactive web interface  
+- No installation required  
+- Upload your own CSV files for prediction  
+- Automatic evaluation when `price_range` column is present  
+- Download sample **test.csv** from the application  
+
+This deployment makes the project easy to test, demonstrate, and share.
+
+---
 
 ## 12. Conclusion
 
-This project demonstrates an end-to-end machine learning workflow, including data preprocessing, model training, evaluation, and deployment. Results on the held-out test dataset show that Logistic Regression generalizes exceptionally well for this problem, while ensemble models such as XGBoost and Random Forest also achieve strong performance. Distance-based methods such as KNN underperform in high-dimensional feature spaces.
+This project demonstrates a complete **end-to-end machine learning workflow**, covering:
 
-##13. Author
-Chetan Mazumder (M.Tech - DSE)
+- Data preprocessing  
+- Feature scaling  
+- Model training  
+- Performance comparison  
+- Deployment to the cloud  
+
+### Key Insights
+- **Logistic Regression** achieved the highest accuracy, indicating strong linear separability after scaling.
+- **Random Forest** and **XGBoost** effectively captured non-linear relationships and delivered competitive performance.
+- **Decision Tree** showed moderate results but was more prone to overfitting.
+- **Naive Bayes** was constrained by independence assumptions.
+- **KNN** underperformed in the high-dimensional feature space where distance measures become less meaningful.
+
+Using **Scikit-learn Pipelines** ensured consistent transformations during both training and inference while preventing data leakage.
+
+The Streamlit application enables real-time experimentation and practical usability of the trained models.
+
+---
+
+## 13. Author
+
+**Chetan Mazumder**  
+*M.Tech – Data Science & Engineering*
